@@ -1,13 +1,14 @@
 :root{
-    --gold:	#ffd900dc;
+    /* --gold:	#ffd900dc; */
+    --my-green:#6eff3e;
 }
 /* header */
 nav{
  margin: 3px 99px;
-border:1px solid gold
+border:1px solid var(--my-green);
 }
 .nav-item:hover{
-    border-bottom:3px gold solid;
+    border-bottom:3px var(--my-green) solid;
     border-radius: 50%;
 }
 .button-17 {
@@ -45,7 +46,7 @@ border:1px solid gold
   }
   
   .button-17:hover {
-    background: gold;
+    background: var(--my-green);
     color: white;
   }
 
@@ -56,7 +57,7 @@ background-color: black;
 
 }
 .img-custom{
-  position: center;
+  
 }
 .h2-custom{
   border-left: 2px solid grey;
@@ -185,6 +186,7 @@ background-color: black;
 .button:hover span:nth-child(4 ) {
   bottom: 50%;
 }
+/* button cv download */
 .container-button {
 position: absolute;
 top: 35%;
