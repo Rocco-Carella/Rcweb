@@ -1,6 +1,7 @@
 :root{
     /* --gold:	#ffd900dc; */
     --my-green:#6eff3e;
+    --my-grey:rgba(128, 128, 128, 0.644);
 }
 /* header */
 nav{
@@ -57,11 +58,21 @@ background-color: black;
 
 }
 .img-custom{
-  
+
+}
+h1{
+  background: linear-gradient(to right, #b0b0b0, #ffffff, #b0b0b0); /* Gradiente dal grigio metallico al bianco */
+  -webkit-background-clip: text; /* Limita lo sfondo al testo */
+  -webkit-text-fill-color: transparent;
 }
 .h2-custom{
-  border-left: 2px solid grey;
-  padding:20px;
+  color: rgba(128,128, 128, 0.644);
+}
+.h3-custom{
+  border-left: 2px solid rgba(128, 128, 128, 0.644);
+  padding: 0px 20px;
+ margin-top: 50px;
+  
 }
 
 .button {
@@ -189,6 +200,48 @@ background-color: black;
 /* button cv download */
 .container-button {
 position: absolute;
-top: 35%;
+top: 25%;
 right: 10%;
 }
+
+
+/* Banner Scroll Container */
+.banner-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000000; /* Colore di sfondo del banner */
+  padding: 20px 0;
+  position: relative;
+  border-top: 1px solid var(--my-grey);
+  border-bottom: 1px solid var(--my-grey);
+
+}
+
+/* Banner Scroll Content */
+.banner-scroll-content {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scroll-text 30s linear infinite;
+}
+
+/* Text Styling */
+.banner-scroll-content span {
+  font-size: 3.5rem;
+  /* color: var(--my-grey); */
+  font-weight: bold;
+  background: linear-gradient(to right, #b0b0b0, #ffffff, #b0b0b0); /* Gradiente dal grigio metallico al bianco */
+  -webkit-background-clip: text; /* Limita lo sfondo al testo */
+  -webkit-text-fill-color: transparent;
+}
+
+/* Keyframes for Scrolling Effect */
+@keyframes scroll-text {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
