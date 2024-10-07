@@ -1,6 +1,6 @@
 :root{
     /* --gold:	#ffd900dc; */
-    --my-green:#6eff3e;
+    --my-green:rgb(110, 255, 61);
     --my-grey:rgba(128, 128, 128, 0.644);
 }
 /* header */
@@ -209,8 +209,8 @@ right: 10%;
 .banner-scroll-container {
   width: 100%;
   overflow: hidden;
-  background-color: #000000; /* Colore di sfondo del banner */
-  padding: 20px 0;
+  background-color: #000000;
+  padding: 20px 0px;
   position: relative;
   border-top: 1px solid var(--my-grey);
   border-bottom: 1px solid var(--my-grey);
@@ -221,8 +221,8 @@ right: 10%;
 .banner-scroll-content {
   display: inline-block;
   white-space: nowrap;
-  padding-left: 100%;
-  animation: scroll-text 30s linear infinite;
+  /* padding-left: 100%; */
+  animation: scroll-text 15s linear infinite;
 }
 
 /* Text Styling */
@@ -230,9 +230,10 @@ right: 10%;
   font-size: 3.5rem;
   /* color: var(--my-grey); */
   font-weight: bold;
-  background: linear-gradient(to right, #b0b0b0, #ffffff, #b0b0b0); /* Gradiente dal grigio metallico al bianco */
+  background: linear-gradient(to right, #b0b0b090, #ffffff, #b0b0b090); /* Gradiente dal grigio metallico al bianco */
   -webkit-background-clip: text; /* Limita lo sfondo al testo */
   -webkit-text-fill-color: transparent;
+  padding-right:35px;
 }
 
 /* Keyframes for Scrolling Effect */
@@ -244,4 +245,30 @@ right: 10%;
     transform: translateX(-100%);
   }
 }
+/* Small screens */
+@media (max-width: 767px) {
+  .banner-scroll-content span {
+    font-size: 2.5rem; /* Reduce font size for small screens */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 575px) {
+  .banner-scroll-content span {
+    font-size: 2rem; /* Further reduce font size for extra small screens */
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .banner-scroll-content span {
+    font-size: 3.5rem; /* Increase font size for large screens */
+  }
+}
+
+main{
+  /* background: linear-gradient(45deg, black 50%, gold 60%, white 100%); */
+
+}
+110, 255, 61
 
