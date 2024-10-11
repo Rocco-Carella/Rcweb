@@ -267,8 +267,24 @@ right: 10%;
 }
 
 main{
-  /* background: linear-gradient(45deg, black 50%, gold 60%, white 100%); */
+   background: linear-gradient(45deg, black 50%, rgb(110, 255, 61) 60%, rgb(255, 255, 255) 100%);
+   padding-top: 93px;
 
 }
-110, 255, 61
+
+.img-circle {
+  width: 550px;
+  height: 550px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.col-custom{
+  position: relative;
+}
+.div-custom-h4{
+  position:absolute;
+  /* left: 150px; */
+}
+
+
 
